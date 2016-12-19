@@ -9,7 +9,7 @@ Inlämning till MP
 
 Exempel:
 	
-id	order_ref	org_amount        calc_amount
+id	|	order_ref	|	org_amount	|	calc_amount
 
-1   145000043   910.1500000000    2275.3750000000
+1	|	145000043	|	910.1500000000	|	2275.3750000000
 
