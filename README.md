@@ -12,7 +12,7 @@ Exempel:
 Settings: 
 Active & 2.5
 
-Resutl:
+Result:
 	
 id	|	order_ref	|	org_amount	|	calc_amount
 
