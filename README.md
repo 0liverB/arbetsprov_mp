@@ -8,6 +8,11 @@ Inlämning till MP
 * Kolla i DB tabell: oliver_arbetsprov_invoicedata för att se din nyligen aktiverade order 
 
 Exempel:
+
+Settings: 
+Active & 2.5
+
+Resutl:
 	
 id	|	order_ref	|	org_amount	|	calc_amount
 
