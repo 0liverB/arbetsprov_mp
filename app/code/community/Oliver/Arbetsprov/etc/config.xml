@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+    <modules>
+        <Oliver_Arbetsprov>
+            <version>1.0.0</version>
+        </Oliver_Arbetsprov>
+    </modules>
+    <global>
+        <models>
+            <oliver_arbetsprov>
+                <class>Oliver_Arbetsprov_Model</class>
+				 <resourceModel>oliver_arbetsprov_resource</resourceModel>
+            </oliver_arbetsprov>
+			<oliver_arbetsprov_resource>
+                <class>Oliver_Arbetsprov_Model_Resource</class>
+                <entities>
+                    <invoicedata>
+                        <table>oliver_arbetsprov_invoicedata</table>
+                    </invoicedata>
+                </entities>
+            </oliver_arbetsprov_resource>
+        </models>
+		<resources>
+            <oliver_arbetsprov_setup>
+                <setup>
+                    <module>Oliver_Arbetsprov</module>
+                    <class>Mage_Eav_Model_Entity_Setup</class>
+                </setup>
+                <connection>
+                    <use>core_setup</use>
+                </connection>				
+            </oliver_arbetsprov_setup>
+        </resources>
+        <events>
+            <sales_order_invoice_pay>
+                <observers>
+                    <oliver_arbetsprov>
+                        <class>oliver_arbetsprov/observer</class>
+                        <method>logAmount</method>
+                        <type>singleton</type>
+                    </oliver_arbetsprov>
+                </observers>
+            </sales_order_invoice_pay>
+        </events>
+		<helpers>
+			<arbetsprov>
+				<class>Oliver_Arbetsprov_Helper</class>
+			</arbetsprov>
+		</helpers>
+    </global>
+	<adminhtml>
+    <acl>
+        <resources>
+            <all>
+                <title>Allow Everything</title>
+            </all>
+            <admin>
+                <children>
+                    <system>
+                        <children>
+                            <config>
+                                <children>
+                                    <oliver>
+                                        <title>Oliver - All</title>
+                                    </oliver>
+                                </children>
+                            </config>
+                        </children>
+                    </system>
+                </children>
+            </admin>
+        </resources>
+    </acl>
+</adminhtml>
+</config>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+    <tabs>
+        <oliver translate="label" module="arbetsprov">
+            <label>Oliver Arbetsprov</label>
+            <sort_order>100</sort_order>
+        </oliver>
+    </tabs>
+    <sections>
+        <oliver translate="label" module="arbetsprov">
+            <label>Options for Arbetsprov</label>
+            <tab>oliver</tab>
+            <sort_order>1000</sort_order>
+            <show_in_default>1</show_in_default>
+            <show_in_website>1</show_in_website>
+            <show_in_store>1</show_in_store> 
+            <groups>
+                <oliver_group translate="label" module="arbetsprov">
+                    <label>Arbetsprov options</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>1000</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store> 
+                    <fields>
+						<oliver_arbetsprov_active translate="label">
+                            <label>Extension active: </label>
+                            <comment>Choose if you want the extension to be active or not</comment>
+                            <frontend_type>select</frontend_type>
+                            <sort_order>10</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                        </oliver_arbetsprov_active>
+                        <oliver_arbetsprov_decimal translate="label">
+                            <label>Decimal field: </label>
+                            <comment>Input your decimal value (0.0000)</comment>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>20</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </oliver_arbetsprov_decimal>                        
+                    </fields>
+                </oliver_group>
+            </groups>
+        </oliver>
+    </sections>
+</config>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+    <modules>
+        <Oliver_Arbetsprov>
+            <active>true</active>
+            <codePool>community</codePool>
+        </Oliver_Arbetsprov>
+    </modules>
+</config>
